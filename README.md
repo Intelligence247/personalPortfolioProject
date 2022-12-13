@@ -1,5 +1,5 @@
 # personalPortfolioProject
-*An implementation of personalPortfolioProject clone with html and css*
+*An implementation of personalPortfolioProject clone with html, css and JavaScript*
 ## Getting Started
 Clone or download this repository and run with a local server of open `index.html` with your favorite browser
 ## Prequisite
@@ -12,6 +12,7 @@ Clone or download this repository and run with a local server of open `index.htm
 ## Tech/framework used
 - Html
 - Css
+- JavaScript
 ## Preview here
 [Go Live](https://beamish-cocada-a666bb.netlify.app)
 ## Contact
