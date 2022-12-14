@@ -280,8 +280,14 @@ section.reviewstoreimg {
 
 .contribution {
     background-color: #ffd7d0;
-    padding: 3rem 0rem 3rem 11rem;
+    padding: 3rem 0rem 3rem 0rem;
     line-height: 1.5rem;
+}
+
+.contribution p {
+    margin-left: 11rem;
+    font-size: 1.2rem;
+    line-height: 2rem;
 }
 
 .coded {
