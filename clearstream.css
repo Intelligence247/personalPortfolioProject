@@ -1,0 +1,80 @@
+.background {
+    background-color: #bee5ea;
+}
+
+
+.mallshots {
+    grid-template-columns: repeat(6, 1fr);
+}
+
+.mallshots img {
+    width: 90%;
+    margin-top: 15rem;
+}
+
+.textinfo {
+    margin-top: -3rem;
+}
+
+.twopics {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    margin-bottom: 10rem;
+}
+
+.navconcept {
+    background-color: white;
+    padding: 3rem 0rem;
+}
+
+.camph1 {
+    background-color: #d8e0f3;
+    padding: 5rem 1.5rem;
+}
+
+.camph1 h1 {
+    width: max-content;
+    margin: auto;
+    margin-bottom: 3rem;
+    color: rgba(0, 0, 0, 0.5);
+    font-weight: 400;
+}
+
+.campaign {
+    width: 100vw;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    height: max-content;
+
+}
+
+.campaign img {
+    width: 95%;
+}
+
+.proposed img {
+    box-shadow: none;
+}
+
+.fourpics {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.fourpics img {
+    width: 30rem;
+    margin: 0;
+
+    box-shadow: 0 10px 9px -5px gray;
+
+}
+
+.fourpics figcaption {
+    margin-bottom: 2rem;
+}
+
+.contribution {
+    background-color: #bee5ea;
+}
