@@ -1,4 +1,8 @@
-body {}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
 .head {
     /* background-color: #4239c8; */
@@ -43,7 +47,7 @@ body {}
 }
 
 .background {
-    width: 90rem;
+    width: 94rem;
     background-color: #ffd7d0;
     height: 25rem;
     position: absolute;
@@ -84,6 +88,7 @@ section.info {
     padding: 0rem 10rem;
     position: relative;
     margin-bottom: 5rem;
+    width: 89rem;
 
 }
 
@@ -107,4 +112,186 @@ section.info {
     padding: 0rem 4rem;
     position: relative;
     top: -5rem;
+}
+
+.research,
+.review,
+.proposed {
+    width: 65rem;
+    margin: auto;
+    display: flex;
+
+}
+
+.research img {
+    width: 50%;
+    height: 45rem;
+    margin-top: 15rem;
+    transform: rotate(-5deg);
+}
+
+.researchtexts,
+.reviewtext {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    color: #333333;
+    font-size: 1.3rem;
+    line-height: 1.5rem;
+}
+
+.researchtexts h1,
+.review h1 {
+    color: rgba(0, 0, 0, 0.6);
+    font-weight: 400;
+}
+
+ul li {
+    margin-left: 3rem;
+    line-height: 2rem;
+
+}
+
+.review P:nth-child(2),
+.researchtexts p:nth-child(2) {
+    color: #0aa0d0;
+}
+
+.review .empty {
+    width: 50%;
+    padding-left: 6rem;
+
+
+
+}
+
+.review {
+    flex-direction: row;
+    margin-top: 3rem;
+}
+
+section.reviewstoreimg {
+    background-color: #f4f4f4;
+    padding: 4rem 0rem;
+    width: 89rem;
+}
+
+.empty img {
+    width: 90%;
+    box-shadow: #999 0px 3px 6px 7px;
+}
+
+.pros h1 {
+    color: black;
+    font-size: larger;
+}
+
+.proposed img {
+    width: 95%;
+    box-shadow: #999 0px 3px 30px 7px;
+
+
+}
+
+.proposed {
+    flex-direction: column;
+    padding-left: 3rem;
+    color: rgba(0, 0, 0, 0.7);
+    gap: 1rem;
+}
+
+.proposed p {
+    width: 40rem;
+    line-height: 2.7rem;
+    margin-top: 3rem;
+    font-size: 1.7rem;
+}
+
+.survey {
+    justify-content: space-between;
+    padding: 4rem 0rem 3rem 3rem;
+
+}
+
+.quote {
+    margin-top: 5rem;
+    font-family: Lato, Helvetica, sans-serif;
+    color: rgba(0, 0, 0, 0.5);
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    line-height: 3rem;
+    font-size: 1.5rem;
+    font-weight: 200;
+}
+
+.quote h1 {
+    color: #0aa0d0;
+    font-weight: 400;
+}
+
+.redesignsect {
+    background-color: #ffd7d0;
+    width: 89rem;
+}
+
+.map h1 {
+    width: max-content;
+    margin: 3rem auto;
+    color: rgba(0, 0, 0, 0.4);
+}
+
+.approach .reviewtext h1 {
+    color: #0aa0d0;
+}
+
+.approach .reviewtext p:nth-child(2) {
+    color: #333333;
+}
+
+.approach p,
+.approach h1 {
+    font-size: 1.2rem;
+}
+
+.approach {
+    padding-left: 3rem;
+    padding-bottom: 3rem;
+}
+
+.store {
+    padding-bottom: 4rem;
+}
+
+.stakeholder h2,
+.interviewQ h1 {
+    color: #0aa0d0;
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+
+.conclusion h2 {
+    color: rgba(0, 0, 0, 0.4);
+    font-weight: 400;
+
+}
+
+.contribution {
+    background-color: #ffd7d0;
+    padding: 3rem 0rem 3rem 11rem;
+    line-height: 1.5rem;
+}
+
+.coded {
+    background-color: #29ABE2;
+    color: white;
+    padding: 3rem 0rem;
+}
+
+.coded p {
+    width: max-content;
+    margin: auto;
+    font-size: 0.9rem;
 }
