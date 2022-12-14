@@ -1,0 +1,40 @@
+.background {
+    background-color: #fffa9f;
+
+}
+
+section.info {
+    height: 35rem;
+}
+
+.cookieslogo img {
+    width: 3.5rem;
+    margin: auto;
+    display: block;
+    margin-top: -2rem;
+}
+
+.reviewtext p:nth-child(2) {
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.proposed img {
+    margin-top: 4rem;
+}
+
+.twopics {
+    width: 65rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* gap: 2rem; */
+    margin: 4rem auto;
+}
+
+.twopics img {
+    width: 95%;
+    box-shadow: #999 0px 3px 6px 3px;
+}
+
+.contribution {
+    background-color: #fffa9f;
+}

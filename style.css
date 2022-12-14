@@ -72,9 +72,6 @@ header img {
     padding: 2rem 0rem;
 
 
-
-
-
 }
 
 .email,
@@ -196,9 +193,11 @@ p.line {
     height: 90%;
 }
 
-.lyft:nth-of-type(3) img {
+.lyft:nth-of-type(3) img,
+.lyft:nth-of-type(4) img {
     width: 90%;
 }
+
 
 .apple p:nth-child(2),
 .mall p:not(p:last-child) {
@@ -210,7 +209,8 @@ p.line {
 }
 
 .mallDesign a,
-.links a {
+.links a,
+.contribution a {
     text-decoration: none;
     color: #2aabe2;
     font-size: 1.2rem;
@@ -220,7 +220,8 @@ p.line {
 }
 
 .mallDesign a:hover,
-.links a:hover {
+.links a:hover,
+.contribution a:hover {
     border-bottom: 1px solid#2aabe2;
 
 }
@@ -409,6 +410,7 @@ p.line {
     margin-top: 3rem;
 }
 
+:hover
 /* research #777777 */
 /* border #cccccc */
 /* lyft color #2aabe2 */
