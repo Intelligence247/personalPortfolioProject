@@ -194,7 +194,8 @@ p.line {
 }
 
 .lyft:nth-of-type(3) img,
-.lyft:nth-of-type(4) img {
+.lyft:nth-of-type(4) img,
+.lyft:nth-of-type(5) img {
     width: 90%;
 }
 
@@ -410,7 +411,6 @@ p.line {
     margin-top: 3rem;
 }
 
-:hover
 /* research #777777 */
 /* border #cccccc */
 /* lyft color #2aabe2 */
