@@ -4,23 +4,55 @@
     box-sizing: border-box;
 }
 
+main {
+    width: 88rem;
+    margin: auto;
+}
+
+
 html {
     scroll-behavior: smooth;
 }
 
 body {
     overflow-x: hidden;
-
+    /* width: 10%; */
     height: max-content;
+    /* margin: auto; */
+
 }
 
 header {
-    /* background-color: #4239c8; */
+    background-color: #4239c8;
     height: max-content;
     color: white;
     display: flex;
     flex-direction: column;
     padding: 0rem 10rem;
+    position: relative;
+    padding-bottom: 10rem;
+    width: 100vw;
+
+}
+
+/* header::after { */
+/* content: ''; */
+/* background-color: white; */
+/* position: absolute; */
+/* bottom: 0; */
+/* right: 0; */
+/* border-width: 100px 0 0 1400px; */
+/* border-color: transparent transparent transparent white; */
+/* } */
+
+.background {
+    position: absolute;
+    border-width: 100px 100vw 0px 0px;
+    /* top left bottom right*/
+    bottom: 0;
+    right: 0;
+    border-color: transparent white transparent transparent;
+    border-style: solid;
 
 }
 
@@ -41,6 +73,7 @@ header img {
     border-left: 0.8rem solid transparent;
     border-bottom: 1rem solid white;
     /* border-radius: 4px; */
+    transform: rotate(0deg);
     position: relative;
 }
 
@@ -101,8 +134,9 @@ header h1 {
     line-height: 2.5rem;
 }
 
+/* 
 .background {
-    width: 90rem;
+    width: 11 0%;
     background-color: #4239c8;
     height: 35rem;
     position: absolute;
@@ -111,7 +145,8 @@ header h1 {
     top: -4rem;
     left: -2rem;
 
-}
+} */
+
 
 #work {
     margin-top: 8rem;
@@ -393,7 +428,8 @@ p.line {
 
 #contact .background2 {
     background-color: #2aabe2;
-    width: 90rem;
+    /* width: 90rem; */
+    width: 110%;
     height: 35rem;
     position: absolute;
     z-index: -1;
