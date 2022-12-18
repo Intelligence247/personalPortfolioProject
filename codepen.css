@@ -12,18 +12,33 @@
     height: 100vh;
 }
 
-main {
-    overflow-y: auto;
-    padding: 5rem 10rem;
+body {
+    width: 100%;
 }
 
-header {
+main {
+    overflow-y: auto;
+    width: 100%;
+    overflow-x: hidden;
+    padding-top: 5rem;
+}
+
+.header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: rgba(255, 255, 255, 0.7);
+    /* background-color: red; */
     padding: 0rem 10rem;
+    width: 88rem;
+    margin: auto;
+}
+
+header {
     border-bottom: 0.5px solid rgba(0, 0, 0, 0.2);
+    width: 100vw;
+    background-color: rgba(255, 255, 255, 0.7);
+    display: flex;
+
 }
 
 .triangle {
@@ -72,9 +87,11 @@ footer {
     align-items: center;
     color: white;
     height: 5rem;
+    width: 100vw;
 }
 
 .codepen {
+
     width: 30rem;
     margin: auto;
     display: flex;
@@ -126,6 +143,13 @@ footer {
     grid-template-columns: repeat(2, 1fr);
     margin-top: 10rem;
 
+
+}
+
+aside {
+    width: 80rem;
+    margin: auto;
+    padding: 0rem 10rem;
 }
 
 .pics img,
@@ -202,6 +226,7 @@ footer {
 .link {
     display: flex;
     justify-content: center;
+    margin-bottom: 5rem;
 
 }
 
