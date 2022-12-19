@@ -82,6 +82,10 @@ header img {
     font-size: 0.8rem;
 }
 
+.ty {
+    width: 67rem;
+}
+
 .hello a {
     color: white;
     font-size: 1rem;
@@ -92,6 +96,7 @@ header img {
     justify-content: space-between;
     height: max-content;
     padding: 2rem 0rem;
+    width: 100%;
 
 
 }
