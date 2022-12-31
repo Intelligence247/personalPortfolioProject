@@ -4,6 +4,8 @@
     box-sizing: border-box;
 }
 
+
+
 main {
     width: 88rem;
     margin: auto;
@@ -436,3 +438,138 @@ p.line {
 /* research #777777 */
 /* border #cccccc */
 /* lyft color #2aabe2 */
+
+/* Clock Styles starts here*/
+
+.clockwrapper {
+    background-color: #e6e6e6;
+    padding: 1rem;
+    height: max-content;
+    width: max-content;
+    border-radius: 70px;
+    margin: auto;
+    color: #383838;
+}
+
+.clockcirc {
+    border-radius: 50%;
+    border: 7px solid #b3b3b3;
+    /* background-color: #ebebeb; */
+    background-color: #e2dfdf;
+    position: relative;
+    height: 25rem;
+    width: 25rem;
+    /* max-width: 20rem;
+    max-height: 20rem; */
+}
+
+
+
+.num {
+    position: absolute;
+    transform: rotate(calc(30deg * var(--i)));
+    text-align: center;
+    inset: 2.5rem;
+}
+
+.num b {
+    position: absolute;
+    transform: rotate(calc(-30deg * var(--i)));
+}
+
+.hour,
+.min,
+.sec {
+    position: absolute;
+    transform-origin: left;
+    left: 50%;
+    top: 50%;
+    border-radius: 50px;
+    height: 0.5rem;
+    background-color: #383838;
+    width: 35%;
+
+}
+
+.hour {
+    width: 30%;
+    height: 0.6rem;
+}
+
+
+
+.hour::before {
+    content: "";
+    position: absolute;
+    width: 2rem;
+    height: 0.4rem;
+    border-radius: 0px 50px 50px 0px;
+    background-color: red;
+    left: 70%;
+    bottom: 0;
+    top: 0.1rem;
+    background-color: #fdcf19;
+}
+
+.min::before {
+    content: "";
+    position: absolute;
+    width: 2rem;
+    height: 0.35rem;
+    border-radius: 0px 50px 50px 0px;
+    background-color: red;
+    left: 75%;
+    bottom: 0;
+    top: 0.08rem;
+    background-color: #fdcf19;
+}
+
+.sec {
+    height: 2px;
+    width: 44%;
+    background-color: #fd: 2;
+}
+
+.sec::before {
+    content: "";
+    position: absolute;
+    width: 1.8rem;
+    height: 0.7rem;
+    border-radius: 50px;
+    right: 95%;
+    bottom: 0;
+    top: -0.3rem;
+    background-color: #fdcf19;
+
+}
+
+.circclock {
+    position: absolute;
+    left: 46%;
+    top: 47%;
+    width: 1.8rem;
+    border-radius: 50%;
+    height: 1.8rem;
+    background-color: #fdcf19;
+    border: 4px solid #f3: 0;
+}
+
+.clockcirc p {
+    width: 45%;
+    height: 2px;
+    border-right: 0.7rem solid #383838;
+    position: absolute;
+    display: flex;
+    left: 50%;
+    transform-origin: 0% 0%;
+    top: 50%;
+    transform: rotate(calc(6deg*var(--x)));
+}
+
+.clockcirc .thickclock {
+    width: 45%;
+    height: 5px;
+    border-right: 1rem solid #383838;
+}
+
+/* Clock styles ends here */
