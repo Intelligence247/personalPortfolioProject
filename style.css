@@ -19,7 +19,6 @@ html {
 body {
     overflow-x: hidden;
     height: max-content;
-
 }
 
 header {
@@ -95,13 +94,12 @@ header img {
 
 .head {
     display: flex;
-    justify-content: space-between;
-    height: max-content;
+    gap: 45rem;
     padding: 2rem 0rem;
-    width: 100%;
-
+    height: max-content;
 
 }
+
 
 .email,
 .navlinks {
@@ -341,10 +339,11 @@ p.line {
     margin-top: 10rem;
 }
 
-.clock p:not(p.line) {
+/* .clock p:not(p.line) */
+.head,
+.footerp {
     width: max-content;
     margin: auto;
-
 
 }
 
@@ -493,7 +492,7 @@ p.line {
 
 .hour {
     width: 30%;
-    height: 0.6rem;
+    height: 0.7rem;
 }
 
 
@@ -501,11 +500,11 @@ p.line {
 .hour::before {
     content: "";
     position: absolute;
-    width: 2rem;
-    height: 0.4rem;
+    width: 2.5rem;
+    height: 0.45rem;
     border-radius: 0px 50px 50px 0px;
     background-color: red;
-    left: 70%;
+    left: 64%;
     bottom: 0;
     top: 0.1rem;
     background-color: #fdcf19;
@@ -514,11 +513,11 @@ p.line {
 .min::before {
     content: "";
     position: absolute;
-    width: 2rem;
+    width: 3.28rem;
     height: 0.35rem;
     border-radius: 0px 50px 50px 0px;
     background-color: red;
-    left: 75%;
+    left: 60%;
     bottom: 0;
     top: 0.08rem;
     background-color: #fdcf19;
