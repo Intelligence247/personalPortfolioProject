@@ -11,6 +11,10 @@ main {
     margin: auto;
 }
 
+.hello p:nth-child(2) {
+    width: 60rem;
+    font-size: 2rem;
+}
 
 html {
     scroll-behavior: smooth;
@@ -94,7 +98,7 @@ header img {
 
 .head {
     display: flex;
-    gap: 45rem;
+    gap: 50rem;
     padding: 2rem 0rem;
     height: max-content;
 
