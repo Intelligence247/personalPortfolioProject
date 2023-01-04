@@ -104,6 +104,11 @@ header img {
 
 }
 
+.ty2 {
+    /* display: none; */
+    background-color: blue;
+    /* width: 100vw; */
+}
 
 .email,
 .navlinks {
