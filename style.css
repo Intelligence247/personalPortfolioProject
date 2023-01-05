@@ -76,10 +76,12 @@ header {
     position: relative;
     padding-bottom: 10rem;
     width: 100vw;
-    z-index: 3;
 
 }
 
+.zindexheader {
+    z-index: 3;
+}
 
 
 .background {
@@ -619,3 +621,16 @@ p.line {
 }
 
 /* Clock styles ends here */
+
+
+
+@media (max-width:640px) {
+    :root {
+        font-size: 10px;
+    }
+
+    body {
+        width: 100vw;
+        height: auto;
+    }
+}
