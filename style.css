@@ -609,12 +609,15 @@ p.line {
     transform-origin: 0% 0%;
     top: 50%;
     transform: rotate(calc(6deg*var(--x)));
+    box-shadow: #383838 0px 0px 0.1px;
+
 }
 
 .clockcirc .thickclock {
     width: 45%;
     height: 5px;
-    border-right: 1rem solid #b3b3b3;
+    border-right: 1rem solid lightblue;
+    box-shadow: #383838 0px 0px 0.1px;
 }
 
 /* clockcirc bg-#e6e6e6 */
@@ -641,6 +644,10 @@ p.line {
     box-shadow: indigo 1px 1px 9px;
 }
 
+.shadow:hover {
+    scale: 1.07;
+    transition: all 0.5s linear;
+}
 
 .mind {
     color: green;
