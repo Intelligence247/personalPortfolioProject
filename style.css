@@ -488,27 +488,24 @@ p.line {
 /* Clock Styles starts here*/
 
 .clockwrapper {
-    background-color: #e6e6e6;
+    /* background-color: #e6e6e6; */
     padding: 1rem;
+    margin: auto;
     height: max-content;
     width: max-content;
-    border-radius: 70px;
-    margin: auto;
-    color: #383838;
+    border-radius: 10% 10% 50% 5px;
+    box-shadow: black 10px 10px 30px 0px;
 }
 
 .clockcirc {
     border-radius: 50%;
     border: 7px solid #b3b3b3;
-    /* background-color: #ebebeb; */
     background-color: #e2dfdf;
+    background-color: #4d4d4d;
     position: relative;
     height: 25rem;
     width: 25rem;
-    /* max-width: 20rem;
-    max-height: 20rem; */
 }
-
 
 
 .num {
@@ -516,6 +513,7 @@ p.line {
     transform: rotate(calc(30deg * var(--i)));
     text-align: center;
     inset: 2.5rem;
+    color: white;
 }
 
 .num b {
@@ -538,7 +536,7 @@ p.line {
 }
 
 .hour {
-    width: 30%;
+    width: 25%;
     height: 0.7rem;
 }
 
@@ -547,11 +545,11 @@ p.line {
 .hour::before {
     content: "";
     position: absolute;
-    width: 2.5rem;
+    width: 2rem;
     height: 0.45rem;
     border-radius: 0px 50px 50px 0px;
     background-color: red;
-    left: 64%;
+    left: 65%;
     bottom: 0;
     top: 0.1rem;
     background-color: #fdcf19;
@@ -560,11 +558,11 @@ p.line {
 .min::before {
     content: "";
     position: absolute;
-    width: 3.28rem;
+    width: 2rem;
     height: 0.35rem;
     border-radius: 0px 50px 50px 0px;
     background-color: red;
-    left: 60%;
+    left: 75%;
     bottom: 0;
     top: 0.08rem;
     background-color: #fdcf19;
@@ -598,16 +596,15 @@ p.line {
     border-radius: 50%;
     height: 1.8rem;
     background-color: #fdcf19;
-    border: 4px solid #f3f3f3;
-
+    border: 4px solid #f3f2f2;
+    z-index: 0;
 }
 
 .clockcirc p {
     width: 45%;
     height: 2px;
-    border-right: 0.7rem solid #383838;
+    border-right: 0.7rem solid #b3b3b3;
     position: absolute;
-    display: flex;
     left: 50%;
     transform-origin: 0% 0%;
     top: 50%;
@@ -617,7 +614,80 @@ p.line {
 .clockcirc .thickclock {
     width: 45%;
     height: 5px;
-    border-right: 1rem solid #383838;
+    border-right: 1rem solid #b3b3b3;
+}
+
+/* clockcirc bg-#e6e6e6 */
+/* sec bg-#fdcf16 */
+.digital {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    color: red;
+    height: 5rem;
+    margin-bottom: 1rem;
+
+}
+
+.shadow {
+    display: flex;
+    align-items: center;
+    width: max-content;
+    gap: 2rem;
+    height: max-content;
+    padding: 0.4rem 0.7rem 1rem 0.7rem;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: indigo 1px 1px 9px;
+}
+
+
+.mind {
+    color: green;
+}
+
+.secd {
+    color: indigo;
+}
+
+.mind,
+.hourd,
+.secd {
+    position: relative;
+    font-size: 2.5rem;
+    height: 2rem;
+    text-shadow: 0px 0px 2px;
+}
+
+.mind::after,
+.hourd::after,
+.secd::after {
+    content: ':';
+    position: absolute;
+    left: 3rem;
+    top: -0.2rem;
+}
+
+.ampm {
+    font-size: 14px;
+    color: chartreuse;
+    box-shadow: white 1px 1px 3px;
+    padding: 5px;
+    text-shadow: red 0px 0px 2px;
+}
+
+.secd::after {
+    animation: blinks 1s linear -1s infinite;
+}
+
+@keyframes blinks {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
 }
 
 /* Clock styles ends here */
@@ -630,7 +700,9 @@ p.line {
     }
 
     body {
-        width: 100vw;
+        width: 100vw 100vw;
         height: auto;
     }
+
+
 }
