@@ -101,6 +101,11 @@ section.info {
 
 }
 
+main {
+    width: 75rem;
+    margin: auto;
+}
+
 .mallshots {
     display: grid;
     grid-template-columns: repeat(3, 1fr);

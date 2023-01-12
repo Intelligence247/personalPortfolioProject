@@ -3,7 +3,7 @@ header {
 }
 
 .mallshots {
-    grid-template-columns: repeat(6, 1fr);
+    grid-template-columns: repeat(6, 12rem);
 }
 
 .mallshots img {
@@ -44,7 +44,7 @@ header {
 
 .campaign {
     width: 100vw;
-    margin: auto;
+    /* margin: auto; */
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     height: max-content;
@@ -52,7 +52,7 @@ header {
 }
 
 .campaign img {
-    width: 95%;
+    width: 87%;
 }
 
 .proposed img {
