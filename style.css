@@ -473,7 +473,6 @@ p.line {
 .background2 {
     position: absolute;
     border-width: 0 0 100px 100vw;
-    /*top left bottom right*/
     top: 0;
     left: 0;
     border-color: transparent transparent transparent white;
@@ -484,7 +483,6 @@ p.line {
 /* research #777777 */
 /* border #cccccc */
 /* lyft color #2aabe2 */
-
 /* Clock Styles starts here*/
 
 .clockwrapper {
@@ -645,7 +643,7 @@ p.line {
 }
 
 .shadow:hover {
-    scale: 1.07;
+    transform: scale3d(1.07, 1.07, 1.07);
     transition: all 0.5s linear;
 }
 
