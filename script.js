@@ -81,4 +81,3 @@ const dateFunc = () => {
 setInterval(dateFunc, 1000)
 
 ampm.innerText = ampmFunc()
-
