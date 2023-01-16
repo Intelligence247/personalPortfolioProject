@@ -81,3 +81,31 @@ const dateFunc = () => {
 setInterval(dateFunc, 1000)
 
 ampm.innerText = ampmFunc()
+
+
+const headerEl = document.querySelector('header')
+
+const heroesEl = document.querySelector('.heroes')
+
+const func = () => {
+    for (let i = 0; i <= 30; i++) {
+        heroesEl.innerHTML += `<img src="./media/plussvg.svg" alt="" style="transform: translateX(${i * 7}rem);"> <img src="./media/circsvg.svg" alt=""
+    style=""> <img src="./media/trisvg.svg" alt="" style="">`
+    }
+}
+func()
+window.addEventListener('mousemove', (e) => {
+    heroesEl.innerHTML = ''
+    for (let i = 0; i <= 30; i++) {
+        heroesEl.innerHTML += `<img src="./media/plussvg.svg" alt="" style="transform: translate3d(${e.pageX / 30}px,${e.pageY / 30}px,0px);">
+         <img src="./media/circsvg.svg" alt=""
+    style="transform: translate3d(${e.pageX / 30}px,${e.pageY / 30}px,0px);"> 
+    <img src="./media/trisvg.svg" alt="" style="transform: translate3d(${e.pageX / 30}px,${e.pageY / 30}px,0px);">`
+    }
+
+})
+
+ // let img1 = document.createElement('img')
+    // let img2 = document.createElement('img')
+    // let img3 = document.createElement('img')
+    // headerEl.appendChild(img1)
