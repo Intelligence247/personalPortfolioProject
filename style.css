@@ -4,6 +4,14 @@
     box-sizing: border-box;
 }
 
+.svgwhite {
+    width: 3rem;
+}
+
+.tyScroll .svgwhite {
+    width: 3rem;
+}
+
 .tyScroll {
     background-color: #4239c8;
     background-color: rgba(255, 250, 250, 0.7);
@@ -640,6 +648,7 @@ p.line {
     margin: auto;
     border-radius: 10px;
     box-shadow: indigo 1px 1px 9px;
+
 }
 
 .shadow:hover {
@@ -678,7 +687,7 @@ p.line {
     color: chartreuse;
     box-shadow: white 1px 1px 3px;
     padding: 5px;
-    text-shadow: red 0px 0px 2px;
+    text-shadow: 0px 0px 2px;
 }
 
 .secd::after {
