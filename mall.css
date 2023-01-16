@@ -4,6 +4,7 @@
     box-sizing: border-box;
 }
 
+
 .head {
     margin: auto;
     padding: 0rem 10rem;
@@ -34,11 +35,6 @@ body {
 
 .navlinks a {
     color: #0aa0d0;
-}
-
-.head img {
-    width: 1rem;
-    height: 1rem;
 }
 
 .signs a {
