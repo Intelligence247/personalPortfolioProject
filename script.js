@@ -89,8 +89,9 @@ const heroesEl = document.querySelector('.heroes')
 
 const func = () => {
     for (let i = 0; i <= 30; i++) {
-        heroesEl.innerHTML += `<img src="./media/plussvg.svg" alt="" style="transform: translateX(${i * 7}rem);"> <img src="./media/circsvg.svg" alt=""
+        heroesEl.innerHTML += `<img src="./media/plussvg.svg" alt="plus image"class="img1" style="--tt:${i * 2}; top:${i * 30}rem"> <img src="./media/circsvg.svg" alt=""
     style=""> <img src="./media/trisvg.svg" alt="" style="">`
+        console.log(i * 30)
     }
 }
 func()

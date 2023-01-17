@@ -9,21 +9,26 @@
     position: absolute;
     width: 100%;
     height: 100%;
-    /* background-color: red; */
     margin-left: -10rem;
     backface-visibility: hidden;
     transform-style: preserve-3d;
+    opacity: 1;
+    z-index: -1;
 }
 
 .heroes img {
     position: relative;
     backface-visibility: hidden;
     transform-style: preserve-3d;
-    top: 0;
-    left: 0;
-    transform: translate(calc*var(--transvalue)rem);
     width: 3rem;
+    opacity: 0.5;
 
+
+}
+
+.img1 {
+    background-color: red;
+    /* transform: rotate(calc(2deg*var(--tt))); */
 }
 
 .svgwhite {
@@ -105,6 +110,7 @@ header {
     width: 100vw;
 
 }
+
 
 .zindexheader {
     z-index: 3;
