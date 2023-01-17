@@ -90,29 +90,43 @@ const heroesEl = document.querySelector('.heroes')
 const func = () => {
     for (let i = 0; i <= 50; i++) {
         heroesEl.innerHTML += `<img src="./media/plussvg.svg" alt="plus image"class="img1" style="top:${i + 3}em"> 
-        <img src="./media/circsvg.svg" alt="circle image"
+        <img src="./media/circsvg.svg" alt="circle image" class="img2"
     style="top:${i + 2}em"> 
-    <img src="./media/trisvg.svg" alt="triangle image" style="top:${i * 2.3}em">`
+    <img src="./media/trisvg.svg" alt="triangle image" class="img3" style="top:${i * 2.3}em">`
+    }
+    for (let i = 20; i >= 0; i--) {
+        heroesEl.innerHTML += `<img src="./media/plussvg.svg" alt="plus image"class="img11" style="top:${i - 15}em"> 
+        <img src="./media/circsvg.svg" alt="circle image" class="img22"
+    style="top:${i - 10}em"> 
+    <img src="./media/trisvg.svg" alt="triangle image" class="img33" style="top:${i - 12}em">`
     }
 }
 func()
+for (let i = 20; i >= 0; i--) {
+    console.log(i)
+}
+
 window.addEventListener('mousemove', (e) => {
     heroesEl.innerHTML = ''
     for (let i = 0; i <= 50; i++) {
-        heroesEl.innerHTML += `<img src="./media/plussvg.svg" alt="plus image"class="img1" style="top:${(i + 3) + e.pageY / 250}em; right:${(i + 1.8) + e.pageX / 35}px;"> 
-        <img src="./media/circsvg.svg" alt="circle image"
-    style="top:${(i + 2) + e.pageY / 240}em; right:${(i + 3) + e.pageX / 40}px;"> 
-    <img src="./media/trisvg.svg" alt="triangle image" style="top:${(i * 2.3) + e.pageY / 260}em" right:${(i + 3) + e.pageX / 45}px;>`
-
-        /* `<img src="./media/plussvg.svg" alt="" style="top:${i};transform: translate3d(${e.pageX / 30}px,${e.pageY / 30}px,0px);">
-             <img src="./media/circsvg.svg" alt=""
-        style="transform: translate3d(${e.pageX / 30}px,${e.pageY / 30}px,0px);"> 
-        <img src="./media/trisvg.svg" alt="" style="transform: translate3d(${e.pageX / 30}px,${e.pageY / 30}px,0px);">`*/
+        heroesEl.innerHTML += `<img src="./media/plussvg.svg" alt="plus image"class="img1" style="top:${(i + 3) + e.pageY / 250}em; right:${(i + 1.8) + e.pageX / 35}px;">
+        <img src="./media/circsvg.svg" alt="circle image"class="img2"
+    style="top:${(i + 2) + e.pageY / 240}em; right:${(i + 3) + e.pageX / 40}px;">
+    <img src="./media/trisvg.svg" alt="triangle image" class="img3" style="top:${(i * 2.3) + e.pageY / 260}em" right:${(i + 3) + e.pageX / 45}px;>`
     }
 
+
+    for (let i = 20; i >= 0; i--) {
+        heroesEl.innerHTML += `<img src="./media/plussvg.svg" alt="plus image" class="img11" style="top:${(i - 15) + e.pageX / 245}em; right:${(i + 2.6) + e.pageX / 34}"> 
+        <img src="./media/circsvg.svg" alt="circle image" class="img22"
+    style="top:${(i - 10) + e.pageY / 240}em;right:${(i + 2) + e.pageX / 45}px;"> 
+        <img src="./media/trisvg.svg" alt="triangle image" class="img33" style="top:${(i - 12) + e.pageY / 255}em; right:${(i + 3) + e.pageX / 40}px;">`
+    }
 })
 
- // let img1 = document.createElement('img')
-    // let img2 = document.createElement('img')
-    // let img3 = document.createElement('img')
-    // headerEl.appendChild(img1)
+
+
+/* `<img src="./media/plussvg.svg" alt="" style="top:${i};transform: translate3d(${e.pageX / 30}px,${e.pageY / 30}px,0px);">
+           <img src="./media/circsvg.svg" alt=""
+      style="transform: translate3d(${e.pageX / 30}px,${e.pageY / 30}px,0px);">
+      <img src="./media/trisvg.svg" alt="" style="transform: translate3d(${e.pageX / 30}px,${e.pageY / 30}px,0px);">`*/

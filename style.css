@@ -24,14 +24,23 @@
     position: relative;
     backface-visibility: hidden;
     transform-style: preserve-3d;
-    width: 3rem;
-    opacity: 0.5;
 
 
 }
 
-.img1 {
-    /* transform: rotate(calc(2deg*var(--tt))); */
+.img3,
+.img1,
+.img2 {
+    opacity: 0.6;
+    width: 3.5rem;
+
+}
+
+.img33,
+.img11,
+.img22 {
+    width: 2.7rem;
+    opacity: 0.2;
 }
 
 .svgwhite {
