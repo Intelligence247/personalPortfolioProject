@@ -14,6 +14,10 @@
     transform-style: preserve-3d;
     opacity: 1;
     z-index: -1;
+    background: linear-gradient(to bottom right, #4F00BC 10%, #29ABE2 100%);
+    overflow: hidden;
+
+
 }
 
 .heroes img {
@@ -27,7 +31,6 @@
 }
 
 .img1 {
-    background-color: red;
     /* transform: rotate(calc(2deg*var(--tt))); */
 }
 
@@ -98,8 +101,6 @@ body {
 }
 
 header {
-    /* background-color: #4239c8; */
-    background: linear-gradient(to bottom right, #4F00BC 10%, #29ABE2 100%);
     height: max-content;
     color: white;
     display: flex;

@@ -88,20 +88,26 @@ const headerEl = document.querySelector('header')
 const heroesEl = document.querySelector('.heroes')
 
 const func = () => {
-    for (let i = 0; i <= 30; i++) {
-        heroesEl.innerHTML += `<img src="./media/plussvg.svg" alt="plus image"class="img1" style="--tt:${i * 2}; top:${i * 30}rem"> <img src="./media/circsvg.svg" alt=""
-    style=""> <img src="./media/trisvg.svg" alt="" style="">`
-        console.log(i * 30)
+    for (let i = 0; i <= 50; i++) {
+        heroesEl.innerHTML += `<img src="./media/plussvg.svg" alt="plus image"class="img1" style="top:${i + 3}em"> 
+        <img src="./media/circsvg.svg" alt="circle image"
+    style="top:${i + 2}em"> 
+    <img src="./media/trisvg.svg" alt="triangle image" style="top:${i * 2.3}em">`
     }
 }
 func()
 window.addEventListener('mousemove', (e) => {
     heroesEl.innerHTML = ''
-    for (let i = 0; i <= 30; i++) {
-        heroesEl.innerHTML += `<img src="./media/plussvg.svg" alt="" style="transform: translate3d(${e.pageX / 30}px,${e.pageY / 30}px,0px);">
-         <img src="./media/circsvg.svg" alt=""
-    style="transform: translate3d(${e.pageX / 30}px,${e.pageY / 30}px,0px);"> 
-    <img src="./media/trisvg.svg" alt="" style="transform: translate3d(${e.pageX / 30}px,${e.pageY / 30}px,0px);">`
+    for (let i = 0; i <= 50; i++) {
+        heroesEl.innerHTML += `<img src="./media/plussvg.svg" alt="plus image"class="img1" style="top:${(i + 3) + e.pageY / 250}em; right:${(i + 1.8) + e.pageX / 35}px;"> 
+        <img src="./media/circsvg.svg" alt="circle image"
+    style="top:${(i + 2) + e.pageY / 240}em; right:${(i + 3) + e.pageX / 40}px;"> 
+    <img src="./media/trisvg.svg" alt="triangle image" style="top:${(i * 2.3) + e.pageY / 260}em" right:${(i + 3) + e.pageX / 45}px;>`
+
+        /* `<img src="./media/plussvg.svg" alt="" style="top:${i};transform: translate3d(${e.pageX / 30}px,${e.pageY / 30}px,0px);">
+             <img src="./media/circsvg.svg" alt=""
+        style="transform: translate3d(${e.pageX / 30}px,${e.pageY / 30}px,0px);"> 
+        <img src="./media/trisvg.svg" alt="" style="transform: translate3d(${e.pageX / 30}px,${e.pageY / 30}px,0px);">`*/
     }
 
 })
