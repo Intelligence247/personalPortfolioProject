@@ -33,7 +33,6 @@ const hourd = document.querySelector('.hourd')
 const hourFuct = () => {
     let date = new Date()
     let hour = date.getHours()
-    console.log(hour)
     // let hour = 12
     if (hour == 0) {
         return 12
@@ -48,7 +47,6 @@ const hourFuct = () => {
     }
 
 }
-console.log(hourFuct())
 const funclength = (param) => {
     if (param < 10) {
         return `0${param}`
@@ -102,17 +100,14 @@ const func = () => {
     }
 }
 func()
-for (let i = 20; i >= 0; i--) {
-    console.log(i)
-}
 
 window.addEventListener('mousemove', (e) => {
     heroesEl.innerHTML = ''
     for (let i = 0; i <= 50; i++) {
-        heroesEl.innerHTML += `<img src="./media/plussvg.svg" alt="plus image"class="img1" style="top:${(i + 3) + e.pageY / 250}em; right:${(i + 1.8) + e.pageX / 35}px;">
+        heroesEl.innerHTML += `<img src="./media/plussvg.svg" alt="plus image"class="img1" style="top:${(i + 3) + e.pageY / 240}em; right:${(i + 1.8) + e.pageX / 28}px;">
         <img src="./media/circsvg.svg" alt="circle image"class="img2"
-    style="top:${(i + 2) + e.pageY / 240}em; right:${(i + 3) + e.pageX / 40}px;">
-    <img src="./media/trisvg.svg" alt="triangle image" class="img3" style="top:${(i * 2.3) + e.pageY / 260}em" right:${(i + 3) + e.pageX / 45}px;>`
+    style="top:${(i + 2) + e.pageY / 230}em; right:${(i + 3) + e.pageX / 32}px;">
+    <img src="./media/trisvg.svg" alt="triangle image" class="img3" style="top:${(i * 2.3) + e.pageY / 235}em" right:${(i + 3) + e.pageX / 30}px;>`
     }
 
 
