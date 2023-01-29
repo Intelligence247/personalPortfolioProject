@@ -199,7 +199,7 @@ header img {
 }
 
 .hello {
-    margin-top: 4rem;
+    margin-top: 6rem;
     flex-direction: column;
     gap: 2rem;
     display: flex;
@@ -212,7 +212,6 @@ header h1 {
 }
 
 .hello p {
-    /* color: #0aa0d0; */
     width: 85%;
     font-size: 1.5rem;
     line-height: 2.5rem;

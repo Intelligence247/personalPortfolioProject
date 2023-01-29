@@ -124,7 +124,7 @@ const colorS = document.querySelectorAll(".colorS")
 
 window.addEventListener('scroll', () => {
     console.log(window.scrollY)
-    if (window.scrollY >= 480) {
+    if (window.scrollY >= 400) {
         tyScroll.style.background = "rgba(255, 250, 250, 0.7)"
         tyScroll.style.borderBottom = "0.5px solid rgba(82, 79, 79, 0.5)"
         for (const c of colorS) {
@@ -139,8 +139,3 @@ window.addEventListener('scroll', () => {
 
     }
 })
-
-/* `<img src="./media/plussvg.svg" alt="" style="top:${i};transform: translate3d(${e.pageX / 30}px,${e.pageY / 30}px,0px);">
-           <img src="./media/circsvg.svg" alt=""
-      style="transform: translate3d(${e.pageX / 30}px,${e.pageY / 30}px,0px);">
-      <img src="./media/trisvg.svg" alt="" style="transform: translate3d(${e.pageX / 30}px,${e.pageY / 30}px,0px);">`*/
