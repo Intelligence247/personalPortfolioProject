@@ -85,7 +85,7 @@ header {
 section.info {
     background: linear-gradient(to left, #4F00BC 0%, #29ABE2 100%);
     height: 30rem;
-    padding: 0rem 10rem;
+    /* padding: 0rem 0; */
     position: relative;
     margin-bottom: 5rem;
     width: 100%;
@@ -98,13 +98,15 @@ section.info {
 }
 
 main {
-    width: 75rem;
+    width: 70rem;
     margin: auto;
 }
 
 .mallshots {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    /* display: grid;
+    grid-template-columns: repeat(3, 1fr); */
+    display: flex;
+    justify-content: space-around;
     top: -10rem;
     position: relative;
 }
