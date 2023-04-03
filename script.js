@@ -121,9 +121,10 @@ window.addEventListener('mousemove', (e) => {
 
 const tyScroll = document.querySelector(".tyScroll")
 const colorS = document.querySelectorAll(".colorS")
-
+for (const c of colorS) {
+     c.style.color = "white"
+ }
 window.addEventListener('scroll', () => {
-    console.log(window.scrollY)
     if (window.scrollY >= 400) {
         tyScroll.style.background = "rgba(255, 250, 250, 0.7)"
         tyScroll.style.borderBottom = "0.5px solid rgba(82, 79, 79, 0.5)"

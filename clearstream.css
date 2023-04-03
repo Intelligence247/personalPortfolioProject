@@ -5,6 +5,9 @@ header {
 .mallshots {
     grid-template-columns: repeat(6, 12rem);
 }
+.navlink a{
+    color: red;
+}
 
 .mallshots img {
     width: 90%;

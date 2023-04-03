@@ -4,6 +4,26 @@
     box-sizing: border-box;
     --bb: red;
 }
+*::-webkit-scrollbar{
+    /* background-image: linear-gradient(180deg, red,green,yellow,black) ; */
+    background: linear-gradient(to bottom right, #777777 10%, #29ABE2 100%);
+    width: 7px;
+}
+*::-webkit-scrollbar-thumb{
+    background-image: linear-gradient(180deg, red,blue, green );
+    background-color: white;
+    border-radius: 20px;
+}
+
+body {
+    overflow-x: hidden;
+    width: 100vw;
+    max-width: 100%;
+    height: auto;
+    overflow-x: hidden;
+
+}
+
 
 .heroes {
     position: absolute;
@@ -14,7 +34,7 @@
     transform-style: preserve-3d;
     opacity: 1;
     z-index: -1;
-    background: linear-gradient(to bottom right, #4F00BC 10%, #29ABE2 100%);
+    background: linear-gradient(to bottom right, #776 10%, #29ABE2 100%);
     overflow: hidden;
     transition: all linear 0.5s;
 
@@ -52,7 +72,6 @@
 }
 
 .tyScroll {
-    /* background-color: rgba(255, 250, 250, 0.7); */
     background-color: transparent;
     width: 100vw;
     height: 4rem;
@@ -60,12 +79,10 @@
     justify-content: center;
     align-items: center;
     position: fixed;
-    /* border-bottom: 0.5px solid rgba(82, 79, 79, 0.5); */
     z-index: 3;
 }
 
 .headScroll a {
-    /* color: #0aa0d0; */
     text-decoration: none;
     font-size: 0.8rem;
 }
@@ -88,9 +105,11 @@
     justify-content: space-between;
     padding-left: 10rem;
     padding-right: 10rem;
+    display: relative;
 }
 
 main {
+    width: 100%;
     width: 88rem;
     margin: auto;
 }
@@ -104,10 +123,6 @@ html {
     scroll-behavior: smooth;
 }
 
-body {
-    overflow-x: hidden;
-    height: max-content;
-}
 
 header {
     height: max-content;
@@ -120,11 +135,6 @@ header {
     width: 100vw;
 
 }
-
-
-/* .zindexheader {
-    z-index: 3;
-} */
 
 
 .background {
@@ -162,7 +172,6 @@ header img {
     border-right: 0.55rem solid transparent;
     border-left: 0.55rem solid transparent;
     border-bottom: 0.73rem solid #4239c8;
-    /* border-radius: 4px; */
     position: absolute;
     top: 2px;
     right: -8.5px;
@@ -203,7 +212,7 @@ header img {
     flex-direction: column;
     gap: 2rem;
     display: flex;
-
+width: 100%;
 }
 
 header h1 {
@@ -426,6 +435,10 @@ p.line {
 
 .clock {
     margin-top: 10rem;
+    box-sizing: border-box;
+    width: 100vw;
+    margin-left: calc(-50vw + 50%);
+    overflow: ;
 }
 
 /* .clock p:not(p.line) */
@@ -528,7 +541,6 @@ p.line {
 /* Clock Styles starts here*/
 
 .clockwrapper {
-    /* background-color: #e6e6e6; */
     padding: 1rem;
     margin: auto;
     height: max-content;
@@ -746,11 +758,59 @@ p.line {
     :root {
         font-size: 10px;
     }
-
-    body {
-        width: 100vw 100vw;
-        height: auto;
-    }
-
+body{
+    overflow-x: hidden;
+    width: 100%;
+}
+header {
+    color: white;
+    display: flex;
+    padding: 0rem 10rem;
+    position: relative;
+    padding-bottom: 10rem;
+    width: 100%;
 
 }
+.lyft{
+    flex-direction: column;
+    height: auto;
+}
+main{
+    width: 100%;
+}
+.hello p:nth-child(2) {
+    width: 20rem;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    padding: 0;
+    
+}
+.hello{
+    width: 100%;
+    padding: 0;
+}
+.heroes {
+    position: absolute;
+    max-width: 100%;
+    height: 100%;
+    margin-left: -10rem;
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
+    opacity: 1;
+    z-index: -1;
+    overflow: hidden;
+    transition: all linear 0.5s;
+
+}
+
+.navlinks {
+    display: inline-block;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    right: 0;
+    gap: 1.5rem;
+}
+
+}
+
